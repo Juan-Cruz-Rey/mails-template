@@ -1,0 +1,34 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body background-color="#F6F8F9" width="600px">
+    <mj-include path="../components/header.mjml" />
+
+    <mj-section padding="8px 32px">
+      <mj-column>
+        <mj-image src="../../assets/bienvenida-onboarding.png" alt="" width="280px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="16px 32px 24px">
+      <mj-column>
+        <mj-text mj-class="title" padding="0 0 20px">
+          ¡Bienvenido {{nombre}}! 🎉
+        </mj-text>
+        <mj-text padding="0 0 14px">
+          ¡Tu cuenta ya está lista para usar!<br/>
+          Ahora ya podés agregar <strong>tarjetas</strong>, y usarlas para pagar tus compras.<br/>
+          Creá tu <span style="color:#e31e24;">cuenta virtual</span> y accedé a más beneficios: vas a poder tener <strong>dinero en cuenta y realizar pagos, enviar y recibir transferencias</strong>.
+        </mj-text>
+        <mj-text padding="0 0 14px">
+          Podés acceder desde la app, a los Términos y Condiciones que aceptaste al crear tu cuenta, para que los puedas consultar cuando quieras.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/block-contact.mjml" />
+    <mj-include path="../components/block-warning.mjml" />
+    <mj-include path="../components/block-legal.mjml" />
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>
