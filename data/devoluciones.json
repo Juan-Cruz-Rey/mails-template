@@ -1,0 +1,10 @@
+{
+  "output": "devoluciones.html",
+  "partial": "body-devoluciones.html",
+  "hero_img": "assets/img-devoluciones.png",
+  "title": "{{nombre}}, ya estamos<br>procesando la devolución de tu compra",
+  "purchase_detail": "{{purchase_detail}}",
+  "amount": "{{amount}}",
+  "transaction_id": "{{transaction_id}}",
+  "credit_detail": "{{credit_detail}}"
+}

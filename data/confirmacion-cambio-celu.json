@@ -1,0 +1,10 @@
+{
+  "output": "confirmacion-cambio-celu.html",
+  "partial": "body-confirmacion-cambio-celu.html",
+  "hero_img": "assets/img-confirmacion-cambio-celu.png",
+  "title": "{{nombre}}, ya actualizamos<br>tu número de celular",
+  "phone": "{{phone}}",
+  "device": "{{device}}",
+  "datetime": "{{datetime}}",
+  "ip": "{{ip}}"
+}

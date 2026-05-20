@@ -1,0 +1,6 @@
+{
+  "output": "intento-ingreso.html",
+  "partial": "body-intento-ingreso.html",
+  "hero_img": "assets/img-intento-ingreso.png",
+  "title": "{{nombre}}, hubo un intento<br>de acceso a tu cuenta"
+}
