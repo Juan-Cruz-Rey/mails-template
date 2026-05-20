@@ -1,35 +1,40 @@
 const fs = require('fs');
 const path = require('path');
-const juice = require('juice');
+const mjml2html = require('mjml');
 
-const TEMPLATES_DIR = path.join(__dirname, 'templates');
-const PARTIALS_DIR  = path.join(TEMPLATES_DIR, 'partials');
-const DATA_DIR      = path.join(__dirname, 'data');
+const TEMPLATES_DIR = path.join(__dirname, 'src', 'templates');
 const DIST_DIR      = path.join(__dirname, 'dist');
-const CSS_FILE      = path.join(__dirname, 'styles', 'mail.css');
-
-const base = fs.readFileSync(path.join(TEMPLATES_DIR, 'base.html'), 'utf8');
-const css  = fs.readFileSync(CSS_FILE, 'utf8');
 
 if (!fs.existsSync(DIST_DIR)) fs.mkdirSync(DIST_DIR);
 
-const dataFiles = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+function buildAll() {
+  const files = fs.readdirSync(TEMPLATES_DIR).filter(f => f.endsWith('.mjml'));
 
-dataFiles.forEach(file => {
-  const data    = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), 'utf8'));
-  const partial = fs.readFileSync(path.join(PARTIALS_DIR, data.partial), 'utf8');
+  files.forEach(file => {
+    const filePath = path.join(TEMPLATES_DIR, file);
+    const mjmlSrc  = fs.readFileSync(filePath, 'utf8');
 
-  // Replace all {{key}} placeholders
-  let html = base;
-  const vars = { ...data, body: partial };
-  for (const [key, value] of Object.entries(vars)) {
-    html = html.replaceAll(`{{${key}}}`, value ?? '');
-  }
+    const { html, errors } = mjml2html(mjmlSrc, { filePath });
 
-  // Remove the <link> tag and inline the CSS instead
-  html = html.replace(/<link[^>]+mail\.css[^>]*>/i, '');
-  html = juice.inlineContent(html, css);
+    if (errors && errors.length) {
+      console.warn(`[${file}] warnings:`);
+      errors.forEach(e => console.warn(`  - ${e.formattedMessage || e.message}`));
+    }
 
-  fs.writeFileSync(path.join(DIST_DIR, data.output), html, 'utf8');
-  console.log(`Built: dist/${data.output}`);
-});
+    const outName = file.replace(/\.mjml$/, '.html');
+    fs.writeFileSync(path.join(DIST_DIR, outName), html, 'utf8');
+    console.log(`Built: dist/${outName}`);
+  });
+}
+
+buildAll();
+
+if (process.argv.includes('--watch')) {
+  console.log('\nWatching src/ for changes...');
+  fs.watch(path.join(__dirname, 'src'), { recursive: true }, (_, file) => {
+    if (file && file.endsWith('.mjml')) {
+      console.log(`\nChange detected: ${file}`);
+      try { buildAll(); } catch (e) { console.error(e.message); }
+    }
+  });
+}

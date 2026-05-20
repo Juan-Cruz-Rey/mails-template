@@ -1,0 +1,7 @@
+<mj-section mj-class="block-contact">
+  <mj-column>
+    <mj-text>
+      Podés comunicarte con nosotros por WhatsApp al <strong>11 7614-2850</strong>, por mail a <a href="mailto:info@coto.com.ar">info@coto.com.ar</a> o comunicate al <strong>0800-888-4848</strong> (opción 6) de Lunes a Viernes de 8 a 21 hs. y Sábados de 8 a 19 hs.
+    </mj-text>
+  </mj-column>
+</mj-section>

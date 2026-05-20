@@ -1,0 +1,5 @@
+<mj-section padding="24px 32px 16px">
+  <mj-column>
+    <mj-image src="../../assets/logo.png" alt="COTO" width="120px" align="left" padding="0" />
+  </mj-column>
+</mj-section>

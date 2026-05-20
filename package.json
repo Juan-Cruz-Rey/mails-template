@@ -2,9 +2,10 @@
   "name": "coto-mail-templates",
   "version": "1.0.0",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "watch": "node build.js --watch"
   },
   "dependencies": {
-    "juice": "^10.0.0"
+    "mjml": "^4.15.3"
   }
 }

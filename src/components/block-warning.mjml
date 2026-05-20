@@ -1,0 +1,8 @@
+<mj-section mj-class="block-warning">
+  <mj-column>
+    <mj-text mj-class="text-uppercase">
+      NUNCA TE PEDIREMOS TU CONTRASEÑA, CÓDIGO DE VERIFICACIÓN, PIN NI DATOS COMPLETOS DE TU TARJETA POR NINGUNA VÍA DE COMUNICACIÓN. <strong>NO COMPARTAS TU INFORMACIÓN CON NADIE.</strong><br/>
+      SI TENÉS DUDAS, CONTACTANOS SOLO A TRAVÉS DE NUESTROS CANALES OFICIALES.
+    </mj-text>
+  </mj-column>
+</mj-section>

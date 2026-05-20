@@ -1,69 +1,86 @@
 # COTO Mail Templates
 
-Sistema de templates de mail para COTO. Todos los mails comparten una misma cáscara (header, bloques de contacto, advertencia, legal y footer) y solo varía el contenido central de cada uno.
+Sistema de templates de mail para COTO basado en **[MJML](https://mjml.io/)**. Todos los mails comparten una misma cáscara (header, bloques de contacto, advertencia, legal y footer) y solo varía el contenido central de cada uno.
+
+MJML compila a HTML compatible con todos los clientes de mail (incluido Outlook), inlinea el CSS y resuelve el responsive automáticamente.
 
 ## Estructura
 
 ```
 mails-template/
-├── assets/                  Imágenes finales que usan los mails (logo y heros)
-├── data/                    Un JSON por template: define título, hero, partial y variables
-├── styles/
-│   └── mail.css             Estilos compartidos (BEM + responsive)
-├── templates/
-│   ├── base.html            Cáscara común con placeholders {{title}}, {{hero_img}}, {{body}}
-│   └── partials/            Contenido único de cada template (lo que va entre el título y el bloque de contacto)
-├── dist/                    Output compilado — generado por el build, no editar a mano
+├── assets/                  Imágenes que usan los mails (logo y heros)
+├── src/
+│   ├── components/          Bloques compartidos por todos los mails (header, footer, blocks, head)
+│   └── templates/           Un .mjml por mail
+├── dist/                    HTMLs compilados — generado por el build, no editar a mano
 ├── figma/                   Mockups de referencia (no se usan en build)
-├── build.js                 Script que compila base + partial + data + css → dist/
+├── build.js                 Script de compilación
 └── package.json
 ```
 
-## Cómo funciona
-
-1. `base.html` define la estructura común de todos los mails.
-2. Cada mail tiene un **partial** en `templates/partials/` con su contenido único.
-3. Cada mail tiene un **JSON** en `data/` que define:
-   - `output`: nombre del archivo final
-   - `partial`: qué partial usar
-   - `hero_img`: ruta a la imagen del hero
-   - `title`: título del mail
-   - Variables adicionales que use el partial (ej: `phone`, `amount`, etc.)
-4. `build.js` toma cada JSON, reemplaza los `{{placeholders}}` en `base.html` y el partial, inlinea el CSS de `mail.css` con [juice](https://github.com/Automattic/juice), y escribe el HTML final en `dist/`.
-
-## Cómo previsualizar / generar los mails
+## Cómo usar
 
 ```bash
 npm install
-npm run build
+npm run build         # compila todos los mails a dist/
+npm run watch         # recompila al guardar cambios en src/
 ```
 
-Esto genera un HTML por cada JSON de `data/` en la carpeta `dist/`. Abrí cualquiera en el browser para previsualizar.
+Abrí cualquier archivo de `dist/` en el browser para previsualizar.
 
 ## Cómo agregar un nuevo template
 
-1. Agregar la imagen del hero en `assets/` (ej: `img-mi-template.png`).
-2. Crear el partial en `templates/partials/body-mi-template.html` con el contenido único.
-3. Crear el JSON en `data/mi-template.json`:
-   ```json
-   {
-     "output": "mi-template.html",
-     "partial": "body-mi-template.html",
-     "hero_img": "assets/img-mi-template.png",
-     "title": "Título del mail"
-   }
-   ```
-4. Correr `npm run build`.
+1. Agregar la imagen del hero en `assets/` (ej: `mi-template.png`).
+2. Crear `src/templates/mi-template.mjml`:
+
+```xml
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body background-color="#F6F8F9" width="600px">
+    <mj-include path="../components/header.mjml" />
+
+    <mj-section padding="8px 32px">
+      <mj-column>
+        <mj-image src="../../assets/mi-template.png" alt="" width="320px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="16px 32px 24px">
+      <mj-column>
+        <mj-text mj-class="title" padding="0 0 20px">
+          {{nombre}}, título del mail
+        </mj-text>
+        <!-- contenido único acá -->
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../components/block-contact.mjml" />
+    <mj-include path="../components/block-warning.mjml" />
+    <mj-include path="../components/block-legal.mjml" />
+    <mj-include path="../components/footer.mjml" />
+  </mj-body>
+</mjml>
+```
+
+3. Correr `npm run build`.
 
 ## Variables dinámicas
 
-Los `{{placeholders}}` en JSONs y partials (ej: `{{nombre}}`, `{{amount}}`) se mantienen en el HTML compilado, listos para que la plataforma de envío (Mailchimp, SendGrid, etc.) los reemplace por los datos reales del destinatario.
+Los placeholders con doble corchete (`{{nombre}}`, `{{amount}}`, etc.) se mantienen intactos en el HTML compilado. El backend los reemplaza al momento de enviar el mail con cualquier motor de templates (Handlebars, Liquid, Twig, etc.).
 
-## Convención de estilos
+## Estilos compartidos
 
-Los estilos en `mail.css` usan **BEM**:
-- Block: `.email`
-- Elements: `.email__header`, `.email__title`, `.email__block`
-- Modifiers: `.email__block--contact`, `.email__block--warning`, `.email__block--legal`
+Las clases tipográficas y de bloques están definidas como `mj-class` en `src/components/head.mjml`. Para aplicar un estilo en un template:
 
-El responsive se maneja con un único media query a `max-width: 600px`. No se usa Grid ni Flexbox porque los clientes de mail (Outlook en particular) tienen soporte muy limitado — la estructura usa tablas.
+```xml
+<mj-text mj-class="title">Título rojo</mj-text>
+<mj-section mj-class="block-contact">...</mj-section>
+```
+
+## Recomendaciones sobre assets
+
+- **Heros (ilustraciones):** exportar como **JPEG**. Tienen muchos colores y pesan 3-5x menos que PNG.
+- **Logo:** PNG (necesita transparencia/bordes filosos).
+- **SVG:** ❌ no usar. La mayoría de clientes de mail lo bloquean.
+- Mantener el peso total del mail por debajo de **102 KB** — arriba de eso Gmail recorta el contenido.
