@@ -6,7 +6,7 @@
 
     <mj-section padding="8px 32px">
       <mj-column>
-        <mj-image src="../../assets/alerta-de-seguridad.png" alt="" width="280px" padding="0" />
+        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/alerta-de-seguridad_noe1zc.png" alt="" width="280px" padding="0" />
       </mj-column>
     </mj-section>
 

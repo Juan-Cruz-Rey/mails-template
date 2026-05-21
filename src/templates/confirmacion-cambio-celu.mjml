@@ -6,7 +6,7 @@
 
     <mj-section padding="8px 32px">
       <mj-column>
-        <mj-image src="../../assets/img-confirmacion-cambio-celu.png" alt="" width="280px" padding="0" />
+        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/img-confirmacion-cambio-celu_oluqca.png" alt="" width="280px" padding="0" />
       </mj-column>
     </mj-section>
 
