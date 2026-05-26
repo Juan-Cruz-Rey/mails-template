@@ -1,4 +1,4 @@
-<mjml>
+﻿<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -13,7 +13,7 @@
     <mj-section padding="16px 32px 24px">
       <mj-column>
         <mj-text mj-class="title" padding="0 0 20px">
-          ¡Bienvenido {{nombre}}! 🎉
+          ¡Bienvenido %{nombre}%! 🎉
         </mj-text>
         <mj-text padding="0 0 14px">
           ¡Tu cuenta ya está lista para usar!<br/>

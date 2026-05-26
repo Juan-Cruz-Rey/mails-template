@@ -1,4 +1,4 @@
-<mjml>
+﻿<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -13,7 +13,7 @@
     <mj-section padding="16px 32px 16px">
       <mj-column>
         <mj-text mj-class="title" padding="0 0 20px">
-          {{nombre}}, ya enviamos tu<br/>transferencia de {{monto}}
+          %{nombre}%, ya enviamos tu<br/>transferencia de %{monto}%
         </mj-text>
       </mj-column>
     </mj-section>
@@ -22,13 +22,13 @@
       <mj-column>
         <mj-text font-size="15px" font-weight="bold" color="#333333" padding="0 0 16px">Datos del beneficiario</mj-text>
         <mj-text mj-class="info-label">Nombre y Apellido</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{beneficiario_nombre}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{beneficiario_nombre}%</mj-text>
         <mj-text mj-class="info-label">Entidad receptora</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{beneficiario_entidad}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{beneficiario_entidad}%</mj-text>
         <mj-text mj-class="info-label">N° de cuenta</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{beneficiario_cuenta}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{beneficiario_cuenta}%</mj-text>
         <mj-text mj-class="info-label">Motivo</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 0">{{motivo}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 0">%{motivo}%</mj-text>
       </mj-column>
     </mj-section>
 

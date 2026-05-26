@@ -1,4 +1,4 @@
-<mjml>
+﻿<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -13,7 +13,7 @@
     <mj-section padding="16px 32px 16px">
       <mj-column>
         <mj-text mj-class="title" padding="0 0 20px">
-          {{nombre}}, ya actualizamos<br/>tu número de celular
+          %{nombre}%, ya actualizamos<br/>tu número de celular
         </mj-text>
       </mj-column>
     </mj-section>
@@ -21,13 +21,13 @@
     <mj-section mj-class="info-box">
       <mj-column>
         <mj-text mj-class="info-label">Nuevo número de teléfono</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{telefono}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{telefono}%</mj-text>
         <mj-text mj-class="info-label">Dispositivo y sistema operativo</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{dispositivo}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{dispositivo}%</mj-text>
         <mj-text mj-class="info-label">Fecha y hora</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">{{fecha_hora}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 16px">%{fecha_hora}%</mj-text>
         <mj-text mj-class="info-label">Dirección IP</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 0">{{ip}}</mj-text>
+        <mj-text mj-class="info-value" padding="2px 0 0">%{ip}%</mj-text>
       </mj-column>
     </mj-section>
 

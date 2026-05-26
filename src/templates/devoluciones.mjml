@@ -1,4 +1,4 @@
-<mjml>
+﻿<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -13,18 +13,18 @@
     <mj-section padding="16px 32px 24px">
       <mj-column>
         <mj-text mj-class="title" padding="0 0 20px">
-          {{nombre}}, ya estamos<br/>procesando la devolución de<br/>tu compra
+          %{nombre}%, ya estamos<br/>procesando la devolución de<br/>tu compra
         </mj-text>
         <mj-text padding="0 0 14px">
-          Concretamos la devolución de tu dinero luego de <span style="color:#aaaaaa;">la cancelación de la compra</span> del día {{fecha_compra}}, {{hora_compra}} en la Sucursal {{sucursal}} de COTO.
+          Concretamos la devolución de tu dinero luego de <span style="color:#aaaaaa;">la cancelación de la compra</span> del día %{fecha_compra}%, %{hora_compra}% en la Sucursal %{sucursal}% de COTO.
         </mj-text>
         <mj-text padding="0 0 14px">
-          Monto devuelto: <strong>{{monto}}</strong><br/>
-          N° de transacción: <strong>{{transaccion}}</strong>
+          Monto devuelto: <strong>%{monto}%</strong><br/>
+          N° de transacción: <strong>%{transaccion}%</strong>
         </mj-text>
         <mj-text padding="0 0 14px">
-          Se acreditará <strong>en el saldo de tu tarjeta {{tarjeta}}.</strong><br/>
-          Puede tardar hasta {{dias}} días hábiles en verse reflejado.
+          Se acreditará <strong>en el saldo de tu tarjeta %{tarjeta}%.</strong><br/>
+          Puede tardar hasta %{dias}% días hábiles en verse reflejado.
         </mj-text>
       </mj-column>
     </mj-section>

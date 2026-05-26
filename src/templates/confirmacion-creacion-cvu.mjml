@@ -1,4 +1,4 @@
-<mjml>
+﻿<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -13,7 +13,7 @@
     <mj-section padding="16px 32px 16px">
       <mj-column>
         <mj-text mj-class="title" padding="0 0 20px">
-          ¡{{nombre}}, ya tenés tu cuenta virtual! 🥳
+          ¡%{nombre}%, ya tenés tu cuenta virtual! 🥳
         </mj-text>
       </mj-column>
     </mj-section>
@@ -22,11 +22,11 @@
       <mj-group>
         <mj-column width="60%">
           <mj-text align="center" font-size="13px" color="#333333" padding="0 0 6px">N° DE CVU</mj-text>
-          <mj-text align="center" mj-class="highlight-red" font-size="16px" padding="0">{{cvu}}</mj-text>
+          <mj-text align="center" mj-class="highlight-red" font-size="16px" padding="0">%{cvu}%</mj-text>
         </mj-column>
         <mj-column width="40%" border-left="1px solid #cccccc">
           <mj-text align="center" font-size="13px" color="#333333" padding="0 0 6px">TU ALIAS</mj-text>
-          <mj-text align="center" mj-class="highlight-red" font-size="16px" padding="0">{{alias}}</mj-text>
+          <mj-text align="center" mj-class="highlight-red" font-size="16px" padding="0">%{alias}%</mj-text>
         </mj-column>
       </mj-group>
     </mj-section>
@@ -34,7 +34,7 @@
     <mj-section padding="20px 32px 8px">
       <mj-column>
         <mj-text>
-          Ya está habilitada tu cuenta a tu nombre, <strong>{{nombre_completo}}</strong> y asociada a tu <strong>CUIL/CUIT n° {{cuil}}</strong>.
+          Ya está habilitada tu cuenta a tu nombre, <strong>%{nombre_completo}%</strong> y asociada a tu <strong>CUIL/CUIT n° %{cuil}%</strong>.
         </mj-text>
       </mj-column>
     </mj-section>
