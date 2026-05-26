@@ -31,7 +31,7 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="20px 32px 8px">
+    <mj-section padding="20px 32px 24px">
       <mj-column>
         <mj-text>
           <strong>Si no reconocés la acción, avisanos para tomar medidas de seguridad sobre tu cuenta.</strong>
