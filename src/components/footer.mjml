@@ -3,7 +3,7 @@
     <mj-divider border-color="#808080" border-width="1px" padding="0" />
   </mj-column>
 </mj-section>
-<mj-section padding="20px 32px">
+<mj-section padding="8px 32px 20px 32px">
   <mj-column>
     <mj-text mj-class="footer-text">
       -Este mail se generó automáticamente, por favor no lo respondas-

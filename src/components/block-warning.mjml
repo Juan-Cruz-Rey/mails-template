@@ -1,7 +1,7 @@
-<mj-section mj-class="block-warning">
+<mj-section mj-class="block-warning" padding="6px 39px 6px 39px">
   <mj-column>
-    <mj-text mj-class="text-uppercase" padding="10px 0">
-      NUNCA TE PEDIREMOS TU CONTRASEÑA, CÓDIGO DE VERIFICACIÓN, PIN NI DATOS COMPLETOS DE TU TARJETA POR NINGUNA VÍA DE COMUNICACIÓN. <strong>NO COMPARTAS TU INFORMACIÓN CON NADIE.</strong><br/>
+    <mj-text mj-class="text-uppercase" padding="10px 0" font-size="10px" line-height="1.4">
+      NUNCA TE PEDIREMOS TU CONTRASEÑA, CÓDIGO DE VERIFICACIÓN, PIN NI DATOS COMPLETOS DE TU TARJETA POR NINGUNA VÍA DE COMUNICACIÓN. <strong style="letter-spacing:0;font-weight:600;">NO COMPARTAS TU INFORMACIÓN CON NADIE.</strong><br/>
       SI TENÉS DUDAS, CONTACTANOS SOLO A TRAVÉS DE NUESTROS CANALES OFICIALES.
     </mj-text>
   </mj-column>

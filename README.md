@@ -1,5 +1,7 @@
 # COTO Mail Templates
 
+https://www.figma.com/design/FKo6X56FPwW5p5YTzaz5J1/Coto-Wallet----MVP?node-id=40004837-6595&t=7siStGQJTLG1kk07-0
+
 Sistema de templates de mail para COTO basado en **[MJML](https://mjml.io/)**. Todos los mails comparten una misma cáscara (header, bloques de contacto, advertencia, legal y footer) y solo varía el contenido central de cada uno.
 
 MJML compila a HTML compatible con todos los clientes de mail (incluido Outlook), inlinea el CSS y resuelve el responsive automáticamente.

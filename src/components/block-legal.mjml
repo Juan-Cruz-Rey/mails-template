@@ -3,9 +3,9 @@
     <mj-divider border-color="#808080" border-width="1px" padding="0" />
   </mj-column>
 </mj-section>
-<mj-section mj-class="block-legal">
+<mj-section mj-class="block-legal" padding="4px 39px 5px 39px">
   <mj-column>
-    <mj-text mj-class="text-small" padding="10px 0">
+    <mj-text mj-class="text-small" padding="10px 0" line-height="1.4" letter-spacing="0px">
       La cuenta de pago y/o cuenta virtual es provista por BIND PSP S.A., CUIT 30-71744907-6. BIND PSP S.A. es un proveedor de servicios de pago y no se encuentra autorizado por el Banco Central de la República Argentina a operar como una entidad financiera. Los fondos depositados en cuentas de pago y/o cuentas virtuales no constituyen depósitos en una entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo a la legislación y reglamentación vigentes y aplicables en materia de depósitos de entidades financieras.
     </mj-text>
   </mj-column>
