@@ -1,4 +1,4 @@
-﻿<mjml>
+<mjml>
   <mj-include path="../components/head.mjml" />
 
   <mj-body background-color="#F6F8F9" width="600px">
@@ -18,22 +18,78 @@
       </mj-column>
     </mj-section>
 
-    <mj-section mj-class="info-box">
+    <mj-section padding="0 32px 24px">
       <mj-column>
-        <mj-text mj-class="info-label">Nuevo número de teléfono</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">%{telefono}%</mj-text>
-        <mj-text mj-class="info-label">Dispositivo y sistema operativo</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">%{dispositivo}%</mj-text>
-        <mj-text mj-class="info-label">Fecha y hora</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 16px">%{fecha_hora}%</mj-text>
-        <mj-text mj-class="info-label">Dirección IP</mj-text>
-        <mj-text mj-class="info-value" padding="2px 0 0">%{ip}%</mj-text>
+        <mj-text padding="0">
+          <table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#f0f0f0;border-radius:8px">
+            <tr>
+              <td style="padding:24px 24px 16px">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                  <tr>
+                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                      <img src="../../assets/icons/phone.png" width="24" height="24" alt="" style="display:block" />
+                    </td>
+                    <td style="vertical-align:top">
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Nuevo número de teléfono</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{telefono}%</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 24px 16px">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                  <tr>
+                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                      <img src="../../assets/icons/laptop.png" width="24" height="24" alt="" style="display:block" />
+                    </td>
+                    <td style="vertical-align:top">
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Dispositivo y sistema operativo</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{dispositivo}%</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 24px 16px">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                  <tr>
+                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                      <img src="../../assets/icons/schedule.png" width="24" height="24" alt="" style="display:block" />
+                    </td>
+                    <td style="vertical-align:top">
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Fecha y hora</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{fecha_hora}%</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 24px 24px">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                  <tr>
+                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                      <img src="../../assets/icons/world.png" width="24" height="24" alt="" style="display:block" />
+                    </td>
+                    <td style="vertical-align:top">
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Dirección IP</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{ip}%</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section padding="20px 32px 24px">
+    <mj-section padding="0 32px 24px">
       <mj-column>
-        <mj-text>
+        <mj-text font-size="11px" letter-spacing="0.49px" padding="0">
           <strong>Si no reconocés la acción, avisanos para tomar medidas de seguridad sobre tu cuenta.</strong>
         </mj-text>
       </mj-column>

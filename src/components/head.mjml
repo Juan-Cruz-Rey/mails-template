@@ -7,24 +7,24 @@
     <mj-all font-family="'Open Sans', Arial, sans-serif" />
     <mj-text font-size="14px" color="#333333" line-height="1.6" />
     <mj-section background-color="#ffffff" padding="0" />
-    <mj-class name="title" font-family="'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="500" color="#e31e24" align="center" line-height="100%" letter-spacing="0.5px" />
+    <mj-class name="title" font-family="'Open Sans', Arial, sans-serif" font-size="22px" font-weight="600" color="#D13438" align="center" line-height="100%" letter-spacing="0.5px" />
     <mj-class name="block-contact" background-color="#f0f0f0" padding="10px 0" />
     <mj-class name="block-warning" padding="14px 39px" />
     <mj-class name="block-legal" padding="16px 39px" />
     <mj-class name="text-uppercase" font-size="12px" color="#555555" text-transform="uppercase" />
     <mj-class name="text-small" font-size="12px" color="#666666" />
     <mj-class name="footer-text" font-family="'Open Sans', Arial, sans-serif" font-size="11px" font-weight="700" line-height="16px" letter-spacing="0.5px" align="center" color="#474747" />
-    <mj-class name="info-box" background-color="#f0f0f0" padding="24px 32px" />
+    <mj-class name="info-box" background-color="#f0f0f0" padding="24px 32px" border-radius="8px" />
     <mj-class name="info-box-text" font-family="'Open Sans', Arial, sans-serif" font-size="12px" font-weight="400" color="#060809" line-height="100%" letter-spacing="0px" />
-    <mj-class name="info-label" font-family="'Open Sans', Arial, sans-serif" font-size="12px" font-weight="400" color="#060809" padding="0" />
-    <mj-class name="info-value" font-family="'Open Sans', Arial, sans-serif" font-size="12px" font-weight="700" color="#060809" padding="2px 0 0" />
+    <mj-class name="info-label" font-family="'Open Sans', Arial, sans-serif" font-size="14px" font-weight="400" color="#060809" line-height="100%" letter-spacing="0px" padding="0" />
+    <mj-class name="info-value" font-family="'Open Sans', Arial, sans-serif" font-size="14px" font-weight="600" color="#060809" line-height="100%" letter-spacing="0px" padding="2px 0 0" />
     <mj-class name="highlight-red" color="#e31e24" font-weight="bold" />
   </mj-attributes>
   <mj-style>
     a { color: #333333; text-decoration: none; font-weight: bold; }
     b { font-weight: 600; }
   </mj-style>
-  <mj-style inline="inline">
+<mj-style inline="inline">
     .logo-coto img { width: 133px !important; min-width: 133px !important; }
     @media only screen and (max-width: 480px) {
       .col-spacer { display: none !important; max-height: 0 !important; overflow: hidden !important; }
