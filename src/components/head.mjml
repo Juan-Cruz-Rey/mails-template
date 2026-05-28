@@ -7,7 +7,7 @@
     <mj-all font-family="'Open Sans', Arial, sans-serif" />
     <mj-text font-size="14px" color="#333333" line-height="1.6" />
     <mj-section background-color="#ffffff" padding="0" />
-    <mj-class name="title" font-family="'Open Sans', Arial, sans-serif" font-size="22px" font-weight="600" color="#D13438" align="center" line-height="100%" letter-spacing="0.5px" />
+    <mj-class name="title" font-family="'Open Sans', Arial, sans-serif" font-size="22px" font-weight="600" color="#D13438" align="center" line-height="1.5" letter-spacing="0.5px" />
     <mj-class name="block-contact" background-color="#f0f0f0" padding="10px 0" />
     <mj-class name="block-warning" padding="14px 39px" />
     <mj-class name="block-legal" padding="16px 39px" />
@@ -23,12 +23,14 @@
   <mj-style>
     a { color: #333333; text-decoration: none; font-weight: bold; }
     b { font-weight: 600; }
-  </mj-style>
-<mj-style inline="inline">
-    .logo-coto img { width: 133px !important; min-width: 133px !important; }
     @media only screen and (max-width: 480px) {
       .col-spacer { display: none !important; max-height: 0 !important; overflow: hidden !important; }
-      .hero-image { margin-top: 20px !important; padding-top: 0 !important; }
+      .mj-column-per-30 { display: inline-block !important; width: 40% !important; max-width: 40% !important; }
+      .mj-column-per-40 { display: inline-block !important; width: 60% !important; max-width: 60% !important; }
+      .hero-image-col { padding-top: 64px !important; }
     }
+  </mj-style>
+  <mj-style inline="inline">
+    .logo-coto img { width: 133px !important; min-width: 133px !important; }
   </mj-style>
 </mj-head>
