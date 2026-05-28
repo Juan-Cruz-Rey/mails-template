@@ -4,10 +4,10 @@
   <mj-body background-color="#F6F8F9" width="600px">
     <mj-section padding="24px 32px 8px">
       <mj-column width="25%" vertical-align="top">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/logo_ksafym.png" alt="COTO" width="133px" align="left" padding="0" />
+        <mj-image src="{{LOGO}}" alt="COTO" width="133px" align="left" padding="0" />
       </mj-column>
       <mj-column width="50%" vertical-align="middle" css-class="hero-image-col">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/confirmacion-creacion-cvu_vnfvn6.png" alt="" width="280px" align="center" padding="10px 0 0" />
+        <mj-image src="{{HERO_CONFIRMACION_CREACION_CVU}}" alt="" width="280px" align="center" padding="10px 0 0" />
       </mj-column>
       <mj-column width="25%" vertical-align="top">
         <mj-text padding="0"> </mj-text>

@@ -4,10 +4,10 @@
   <mj-body background-color="#F6F8F9" width="600px">
     <mj-section padding="0 32px 0">
       <mj-column width="20%" vertical-align="top">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/logo_ksafym.png" alt="COTO" width="133px" height="44px" align="left" padding="24px 0 0" container-background-color="transparent" css-class="logo-coto" />
+        <mj-image src="{{LOGO}}" alt="COTO" width="133px" height="44px" align="left" padding="24px 0 0" container-background-color="transparent" css-class="logo-coto" />
       </mj-column>
       <mj-column width="60%" vertical-align="middle">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/alerta-de-seguridad_noe1zc.png" alt="" width="205px" height="179px" align="center" padding="8px 0 0" css-class="hero-image" />
+        <mj-image src="{{HERO_ALERTA_DE_SEGURIDAD}}" alt="" width="205px" height="179px" align="center" padding="8px 0 0" css-class="hero-image" />
       </mj-column>
       <mj-column width="20%" css-class="col-spacer">
       </mj-column>
@@ -30,7 +30,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:36px;vertical-align:middle;padding-right:12px">
-                      <img src="../../assets/icons/laptop.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_LAPTOP}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dispositivo y sistema operativo</span>
@@ -45,7 +45,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:36px;vertical-align:middle;padding-right:12px">
-                      <img src="../../assets/icons/schedule.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_SCHEDULE}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Fecha y hora</span>
@@ -60,7 +60,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:36px;vertical-align:middle;padding-right:12px">
-                      <img src="../../assets/icons/world.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_WORLD}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dirección IP</span>

@@ -4,10 +4,10 @@
   <mj-body background-color="#F6F8F9" width="600px">
     <mj-section padding="24px 32px 8px">
       <mj-column width="25%" vertical-align="top">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/logo_ksafym.png" alt="COTO" width="133px" align="left" padding="0" />
+        <mj-image src="{{LOGO}}" alt="COTO" width="133px" align="left" padding="0" />
       </mj-column>
       <mj-column width="50%" vertical-align="middle" css-class="hero-image-col">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/img-confirmacion-cambio-celu_oluqca.png" alt="" width="280px" align="center" padding="10px 0 0" />
+        <mj-image src="{{HERO_CONFIRMACION_CAMBIO_CELU}}" alt="" width="280px" align="center" padding="10px 0 0" />
       </mj-column>
       <mj-column width="25%" vertical-align="top">
         <mj-text padding="0"> </mj-text>
@@ -31,7 +31,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:40px;vertical-align:top;padding-top:0">
-                      <img src="../../assets/icons/phone.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_PHONE}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Nuevo número de teléfono</span>
@@ -46,7 +46,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:40px;vertical-align:top;padding-top:0">
-                      <img src="../../assets/icons/laptop.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_LAPTOP}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dispositivo y sistema operativo</span>
@@ -61,7 +61,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:40px;vertical-align:top;padding-top:0">
-                      <img src="../../assets/icons/schedule.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_SCHEDULE}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Fecha y hora</span>
@@ -76,7 +76,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
                     <td style="width:40px;vertical-align:top;padding-top:0">
-                      <img src="../../assets/icons/world.png" width="24" height="24" alt="" style="display:block" />
+                      <img src="{{ICON_WORLD}}" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dirección IP</span>

@@ -4,10 +4,10 @@
   <mj-body background-color="#F6F8F9" width="600px">
     <mj-section padding="0 32px 0">
       <mj-column width="30%" vertical-align="top">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/logo_ksafym.png" alt="COTO" width="133px" height="44px" align="left" padding="24px 0 0" container-background-color="transparent" css-class="logo-coto" />
+        <mj-image src="{{LOGO}}" alt="COTO" width="133px" height="44px" align="left" padding="24px 0 0" container-background-color="transparent" css-class="logo-coto" />
       </mj-column>
       <mj-column width="40%" vertical-align="middle">
-        <mj-image src="https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/img-devoluciones_giincb.png" alt="" width="185px" height="180px" align="center" padding="0" css-class="hero-image" />
+        <mj-image src="{{HERO_DEVOLUCIONES}}" alt="" width="185px" height="180px" align="center" padding="0" css-class="hero-image" />
       </mj-column>
       <mj-column width="30%" css-class="col-spacer">
       </mj-column>

@@ -1,6 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const mjml2html = require('mjml');
+const config = require('./src/config');
+
+function injectConfig(html) {
+  return Object.entries(config).reduce((acc, [key, value]) => {
+    return acc.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), value);
+  }, html);
+}
 
 const TEMPLATES_DIR = path.join(__dirname, 'src', 'templates');
 const DIST_DIR      = path.join(__dirname, 'dist');
@@ -14,7 +21,7 @@ function buildAll() {
 
   files.forEach(file => {
     const filePath = path.join(TEMPLATES_DIR, file);
-    const mjmlSrc  = fs.readFileSync(filePath, 'utf8');
+    const mjmlSrc  = injectConfig(fs.readFileSync(filePath, 'utf8'));
 
     const { html, errors } = mjml2html(mjmlSrc, { filePath });
 
@@ -32,7 +39,7 @@ function buildAll() {
     } else {
       const match = html.match(/<div[^>]*aria-label="COTO"[^>]*>([\s\S]*)<\/div>\s*\n\s*<\/body>/);
       const fragment = match ? match[1].trim() : html;
-      fs.writeFileSync(path.join(DIST_BODY_DIR, outName), fragment, 'utf8');
+      fs.writeFileSync(path.join(DIST_BODY_DIR, outName), 'utf8');
       console.log(`Built: dist/body/${outName}`);
     }
   });
