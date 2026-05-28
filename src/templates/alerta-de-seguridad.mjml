@@ -33,7 +33,7 @@
                       <img src="../../assets/icons/laptop.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Dispositivo y sistema operativo</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dispositivo y sistema operativo</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{dispositivo}%</span>
                     </td>
                   </tr>
@@ -48,7 +48,7 @@
                       <img src="../../assets/icons/schedule.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Fecha y hora</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Fecha y hora</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{fecha_hora}%</span>
                     </td>
                   </tr>
@@ -63,7 +63,7 @@
                       <img src="../../assets/icons/world.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:middle;text-align:left">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Dirección IP</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Dirección IP</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{ip}%</span>
                     </td>
                   </tr>

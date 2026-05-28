@@ -22,24 +22,24 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="0 32px 24px">
+    <mj-section padding="0 0 24px" css-class="info-box-section">
       <mj-column>
         <mj-text padding="0">
-          <table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#f0f0f0;border-radius:8px">
+          <table cellpadding="0" cellspacing="0" border="0" class="info-box-table" style="width:calc(100% - 64px);margin:0 32px;background-color:#f0f0f0;border-radius:8px">
             <tr>
-              <td style="padding:24px 24px 16px">
-                <span style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;font-weight:700;color:#333333;display:block">Datos del beneficiario</span>
+              <td class="info-row-td" style="padding:24px 24px 32px 100px">
+                <span style="font-family:'Open Sans',Arial,sans-serif;font-size:16px;font-weight:700;line-height:24px;letter-spacing:0.14px;color:#060809;display:block">Datos del beneficiario</span>
               </td>
             </tr>
             <tr>
-              <td style="padding:0 24px 16px">
+              <td class="info-row-td" style="padding:0 24px 32px 100px">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
-                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                    <td style="width:40px;vertical-align:top;padding-top:0">
                       <img src="../../assets/icons/person.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Nombre y Apellido</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Nombre y Apellido</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{beneficiario_nombre}%</span>
                     </td>
                   </tr>
@@ -47,14 +47,14 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:0 24px 16px">
+              <td class="info-row-td" style="padding:0 24px 32px 100px">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
-                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                    <td style="width:40px;vertical-align:top;padding-top:0">
                       <img src="../../assets/icons/bank.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Entidad receptora</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Entidad receptora</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{beneficiario_entidad}%</span>
                     </td>
                   </tr>
@@ -62,14 +62,14 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:0 24px 16px">
+              <td class="info-row-td" style="padding:0 24px 32px 100px">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
-                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                    <td style="width:40px;vertical-align:top;padding-top:0">
                       <img src="../../assets/icons/money-bag.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">N° de cuenta</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">N° de cuenta</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{beneficiario_cuenta}%</span>
                     </td>
                   </tr>
@@ -77,14 +77,14 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:0 24px 24px">
+              <td class="info-row-td" style="padding:0 24px 24px 100px">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
                   <tr>
-                    <td style="width:36px;vertical-align:top;padding-top:2px">
+                    <td style="width:40px;vertical-align:top;padding-top:0">
                       <img src="../../assets/icons/filter-center-focus.png" width="24" height="24" alt="" style="display:block" />
                     </td>
                     <td style="vertical-align:top">
-                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;color:#060809;line-height:1.4;display:block">Motivo</span>
+                      <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;line-height:100%;letter-spacing:0;color:#060809;display:block;padding-bottom:8px">Motivo</span>
                       <span style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#060809;line-height:1.4;display:block">%{motivo}%</span>
                     </td>
                   </tr>

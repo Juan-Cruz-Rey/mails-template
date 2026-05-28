@@ -28,6 +28,8 @@
       .mj-column-per-30 { display: inline-block !important; width: 40% !important; max-width: 40% !important; }
       .mj-column-per-40 { display: inline-block !important; width: 60% !important; max-width: 60% !important; }
       .hero-image-col { padding-top: 64px !important; }
+      .info-box-table { width: 100% !important; margin: 0 !important; }
+      .info-row-td { padding-left: 32px !important; }
     }
   </mj-style>
   <mj-style inline="inline">
