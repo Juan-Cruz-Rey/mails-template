@@ -24,9 +24,5 @@
       </mj-column>
     </mj-section>
 
-    <mj-include path="../components/block-contact.mjml" />
-    <mj-include path="../components/block-warning.mjml" />
-    <mj-include path="../components/block-legal.mjml" />
-    <mj-include path="../components/footer.mjml" />
   </mj-body>
 </mjml>
