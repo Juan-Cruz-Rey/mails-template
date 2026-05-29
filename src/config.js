@@ -3,6 +3,7 @@ module.exports = {
   LOGO: 'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/logo_ksafym.png',
 
   // Hero images
+  HERO_GENERAL:      'https://static-public-content-dev-test-us01-coto.s3.us-east-1.amazonaws.com/lambda-notifications-email/otp-template/images/mail-generico.png',
   HERO_ALERTA_DE_SEGURIDAD:      'https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/alerta-de-seguridad_noe1zc.png',
   HERO_BIENVENIDA_ONBOARDING:    'https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/bienvenida-onboarding_zeklwh.png',
   HERO_CAMBIO_DE_CONTRASENA:     'https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/cambio-de-crontrasena_smejer.png',
