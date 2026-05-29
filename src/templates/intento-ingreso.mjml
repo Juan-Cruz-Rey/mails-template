@@ -13,9 +13,9 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="28px 32px 24px">
+    <mj-section padding="22px 32px 24px">
       <mj-column>
-        <mj-text mj-class="title" padding="0 0 40px" font-size="22px">
+        <mj-text mj-class="title" padding="0 0 22px" font-size="22px" line-height="1.4">
           %{nombre}%, hubo un intento<br/>de acceso a tu cuenta
         </mj-text>
         <mj-text padding="0 0 20px" letter-spacing="0.25px">
