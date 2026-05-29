@@ -14,12 +14,12 @@ module.exports = {
   HERO_INTENTO_INGRESO:          'https://res.cloudinary.com/difzloxvo/image/upload/v1779362353/img-intento-ingreso_xwnuto.png',
 
   // Icons
-  ICON_BANK:                'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-bank_placeholder.png',
-  ICON_FILTER_CENTER_FOCUS: 'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-filter-center-focus_placeholder.png',
-  ICON_LAPTOP:              'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-laptop_placeholder.png',
-  ICON_MONEY_BAG:           'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-money-bag_placeholder.png',
-  ICON_PERSON:              'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-person_placeholder.png',
-  ICON_PHONE:               'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-phone_placeholder.png',
-  ICON_SCHEDULE:            'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-schedule_placeholder.png',
-  ICON_WORLD:               'https://res.cloudinary.com/difzloxvo/image/upload/v1779362354/icon-world_placeholder.png',
+  ICON_BANK:                'https://res.cloudinary.com/difzloxvo/image/upload/v1780003913/icons/bank_cjpj1c.png', // ready
+  ICON_FILTER_CENTER_FOCUS: 'https://res.cloudinary.com/difzloxvo/image/upload/v1780003913/icons/filter-center-focus_q60bmt.png', // ready
+  ICON_LAPTOP:              'https://res.cloudinary.com/difzloxvo/image/upload/v1780003913/icons/laptop_zuork2.png', // ready
+  ICON_MONEY_BAG:           'https://res.cloudinary.com/difzloxvo/image/upload/v1780003914/icons/money-bag_fqzb3t.png', // ready
+  ICON_PERSON:              'https://res.cloudinary.com/difzloxvo/image/upload/v1780003913/icons/person_wzngkt.png',  // ready
+  ICON_PHONE:               'https://res.cloudinary.com/difzloxvo/image/upload/v1780004508/phone_f0rfn5.png',  // ready
+  ICON_SCHEDULE:            'https://res.cloudinary.com/difzloxvo/image/upload/v1780003914/icons/schedule_wv9tjv.png', // ready
+  ICON_WORLD:               'https://res.cloudinary.com/difzloxvo/image/upload/v1780003914/icons/world_lzbuot.png', // ready
 };

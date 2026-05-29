@@ -1,0 +1,34 @@
+<mjml>
+  <mj-include path="../components/head.mjml" />
+
+  <mj-body background-color="#F6F8F9" width="600px">
+    <mj-section padding="16px 32px">
+      <mj-column>
+        <mj-text padding="0">
+          <h1>%{nombre}%, te devolvimos el dinero de tu compra</h1><br><br>
+
+          <p>Concretamos la devolución de tu dinero luego de %{motivo}% del día %{fecha_compra}%, %{hora_compra}% en la Sucursal %{sucursal}% de COTO.</p>
+          <br>
+
+          <p>Monto devuelto:</p>
+          <p><strong>$%{monto}%</strong></p>
+          <br>
+
+          <p>N° de transacción:</p>
+          <p><strong>%{transaccion}%</strong></p>
+          <br>
+
+          <p>Tarjeta acreditada:</p>
+          <p><strong>%{tarjeta}%</strong></p>
+          <br>
+
+          <p>Puede tardar hasta %{dias}% días hábiles en verse reflejado.</p>
+          <br>
+          <br>
+
+          <em>Si no realizaste esta acción, avisanos para tomar medidas de seguridad sobre tu cuenta.</em>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
