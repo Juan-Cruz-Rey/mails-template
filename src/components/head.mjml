@@ -24,9 +24,9 @@
     a { color: #333333; text-decoration: none; font-weight: bold; }
     b { font-weight: 600; }
     h1 { font-family: 'Open Sans', Arial, sans-serif; font-weight: 600; font-size: 22px; line-height: 100%; letter-spacing: 0.5px; text-align: center; color: #D13438; margin: 0; }
-    p { font-family: Arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 100%; letter-spacing: 0; color: #060809; margin: 0; padding-bottom: 5px; }
-    p strong { font-family: Arial, sans-serif; font-weight: 700; font-size: 14px; line-height: 100%; letter-spacing: 0; color: #060809; }
-    em { font-family: Arial, sans-serif; font-weight: 700; font-style: italic; font-size: 11px; line-height: 16px; letter-spacing: 0.49px; color: #474747; }
+    p { font-family: Arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 1.4; letter-spacing: 0; color: #060809; margin: 0; padding-bottom: 5px; }
+    p strong { font-family: Arial, sans-serif; font-weight: 700; font-size: 14px; line-height: 1.4; letter-spacing: 0; color: #060809; }
+    em { font-family: Arial, sans-serif; font-weight: 700; font-style: italic; font-size: 11px; line-height: 1.4; letter-spacing: 0.49px; color: #474747; }
     @media only screen and (max-width: 480px) {
       .col-spacer { display: none !important; max-height: 0 !important; overflow: hidden !important; }
       .mj-column-per-30 { display: inline-block !important; width: 40% !important; max-width: 40% !important; }
