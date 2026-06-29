@@ -11,8 +11,10 @@ src/
   config.js       # URLs de imágenes centralizadas
 build.js          # Script de compilación
 dist/
-  body/           # HTML compilado para preview en browser
-  template-wrapper.html  # Wrapper completo para uso en backend
+  <env>/          # Una carpeta por ambiente: dev, test, staging, prod
+    body/         # HTML compilado para preview en browser
+    general-notification.html  # Wrapper completo para uso en backend
+  body/           # Temporales (iguales en todos los ambientes)
 ```
 
 ## Instalación
